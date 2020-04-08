@@ -6,17 +6,17 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author dxt
- * @date 2020/4/8 15:32
+ * @date 2020/4/8 16:36
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class CommonResult<T> {
+
     private Integer code;
     private String message;
     private T data;
-
     public CommonResult(Integer code,String message){
-        this(code,message,null);
+        this(code, message, null);
     }
 }
