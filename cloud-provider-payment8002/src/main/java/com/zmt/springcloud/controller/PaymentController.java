@@ -47,10 +47,9 @@ public class PaymentController {
         Payment payment = paymentService.selectPaymentById(id);
 
         if(payment!=null){
-
-          return new CommonResult(200,"查询成功"+serverPort,payment);
+            return new CommonResult(200,"查询成功"+serverPort,payment);
         }else{
-          return new CommonResult(444,"查询失败"+serverPort,payment);
+            return new CommonResult(444,"查询失败"+serverPort,payment);
         }
     }
 
